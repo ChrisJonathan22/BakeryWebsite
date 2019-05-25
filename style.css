@@ -84,13 +84,6 @@ nav ul li a:hover {
 
 
 #homepage { 
-    /*width: 1902px;
-    height: 500px;
-    position: inherit;
-    top: 0;
-    left: 0;
-    right: 0;*/
-    
     width: 100%;
     height: 680px;
     display: block;
@@ -102,54 +95,55 @@ nav ul li a:hover {
     right: 10px;
 }
 
-/*#homepage-2 {
-    width: 100%;
-    height: 600px;
-    background-color: bisque;
-}*/
+#our-story {
+    text-align: center;
+}
 
 #homepage-title {
     
     color: white;
-    text-align: center;
-    font-size: 350%
+    font-size: 4em;
 }
 
 #homepage-content {
     color: white;
-    text-align: center;
-    width: 60%;
-    position: relative;
-    left: 360px;
-    font-size: 150%;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5em;
     padding-bottom: 100px;
 }
 
-.homepage-images {
-    
-    position: relative;
-    left: 420px;
-    width: auto;
-    
+.homepage-timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.content {
+.image-container {
+    width: 40%;
+    padding-bottom: 30px;
+}
+
+.content-container {
+    width: 40%;
+    padding-bottom: 30px;
+}
+
+.homepage-images {
+    width: 100%;
+    height: 100%;
+}
+
+.content-title {
+    text-align: left;
     color: yellowgreen;
-    position: relative;
-    top: -269px;
-    left: 1200px;
-    font-size: 250%;
+    font-size: 3em;
 }
 
 .content-p {
-    
     color: white;
-    text-align: center;
-    width: 40%;
-    position: relative;
-    left: 1100px;
-    top: -270px;
-    font-size: 120%;
+    text-align: left;
+    font-size: 1.5em;
 }
 
 
