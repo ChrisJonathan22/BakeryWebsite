@@ -117,10 +117,13 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .image-container {
     width: 40%;
+
     padding-bottom: 30px;
 }
 
@@ -146,31 +149,33 @@ nav ul li a:hover {
     font-size: 1.5em;
 }
 
-
 p {
     color: white;
     text-align: center;
 }
 
+.social-media-container {
+    padding-bottom: 30px;
+}
 
-.social {
+.social-icons {
     font-size: 50px;
     display: flex;
-    position: relative;
-    left: 48px;
-    
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
 }
 
-.footer1 li { display: inline-block; width: 12%;
+.social-icons li a {
+    color: yellowgreen;
+    transition: border 1s;
 }
 
-
-.second {
-    font-size: 20px;
-    text-align: center;
-    position: relative;
-    top: 0;
+.social-icons li a:hover {
+    color: white;
+    border-bottom: 1px yellowgreen solid;
 }
-  
 
-
+.footer-content p {
+    font-size: 1.5em;
+}
