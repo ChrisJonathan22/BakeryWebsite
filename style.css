@@ -12,6 +12,14 @@ body {
     font-family: 'Alegreya Sans', sans-serif;
 }
 
+.mobile-menu {
+    display: none;
+}
+
+.menu-drawer {
+    display: none;
+}
+
 header {
     width: 100%;
     height: 200px;
@@ -180,6 +188,53 @@ p {
     font-size: 1.5em;
 }
 
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #homepage {
+        height: 400px;
+    }
+
+    header {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        height: 50px;
+        width: 50px;
+        background-color: white !important;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 10;
+    }
+
+    .mobile-menu i {
+        font-size: 3em !important;
+        z-index: 1;
+    }
+
+    .menu-drawer {
+        display: block;
+        transition: width 1s;
+        width: 0%;
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    .menu-drawer ul {
+        list-style: none;
+    }
+
+    .show-drawer {
+        width: 100%;
+    }
+}
+
+/* Desktop */
 @media screen and (min-width: 1705px) {
     #homepage {
         width: 1705px;
