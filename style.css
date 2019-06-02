@@ -6,8 +6,9 @@
 }
 
 body {
+    border: 1px red solid;
     background-image: url(img/background.jpg);
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     font-family: 'Alegreya Sans', sans-serif;
 }
 
@@ -90,9 +91,13 @@ nav ul li a:hover {
 
 }
 
+#homepage-2 {
+    height: 400px;
+}
+
 #homepage {
     width: 100%;
-    height: 680px;
+    height: 100%;
 }
 
 #our-story {
@@ -190,7 +195,7 @@ p {
     }
 
     .mobile-menu {
-        display: block;
+        display: initial;
         height: 50px;
         width: 50px;
         background-color: white !important;
