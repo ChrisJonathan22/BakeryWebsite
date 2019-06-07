@@ -5,8 +5,11 @@
     padding: 0;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
-    border: 1px red solid;
     background-image: url(img/background.jpg);
     overflow-x: hidden !important;
     font-family: 'Alegreya Sans', sans-serif;
@@ -181,6 +184,12 @@ p {
 
 .footer-content p {
     font-size: 1.5em;
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    #homepage-2 {
+    }
 }
 
 /* Mobile + Tablet menu */
