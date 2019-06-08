@@ -23,6 +23,10 @@ body {
     display: none;
 }
 
+#breads-img {
+    display: none;
+}
+
 header {
     width: 100%;
     height: 200px;
@@ -188,8 +192,47 @@ p {
 
 /* Mobile */
 @media screen and (max-width: 480px) {
-    #homepage-2 {
+
+    #homepage {
+        display: none;
     }
+
+    #homepage-2 {
+        background-color: #ffffff !important;
+        height: 300px !important;
+        width: 400px !important;
+        overflow: hidden;
+    }
+
+    #breads-img {
+        display: block;
+    }
+
+    #homepage-content {
+        padding-top: 10px;
+        font-size: 1.3em;
+    }
+
+    .image-container, .content-container {
+        width: 80%;
+    }
+
+    .image-container {
+        padding: 10px 0;
+    }
+
+    .content-container {
+        /* border: 1px red solid; */
+        height: 290px;
+        overflow: hidden;
+        padding: 10px 10px;
+    }
+
+    .content-container .content-p {
+        text-overflow: ellipsis;
+        /* height: 200px; */
+    }
+
 }
 
 /* Mobile + Tablet menu */
