@@ -1,5 +1,5 @@
-const menuIcon = document.getElementsByClassName('menu-icon')[0];
-const menuDrawer = document.getElementsByClassName('menu-drawer')[0];
+const menuIcon = document.querySelector('.menu-icon');
+const menuDrawer = document.querySelector('.menu-drawer');
 
 function toggleDrawer() {  
     menuDrawer.classList.toggle('show-drawer');
