@@ -222,15 +222,15 @@ p {
     }
 
     .content-container {
-        /* border: 1px red solid; */
-        height: 290px;
-        overflow: hidden;
+        border: 1px red solid;
         padding: 10px 10px;
     }
 
     .content-container .content-p {
+        overflow: hidden;
         text-overflow: ellipsis;
-        /* height: 200px; */
+        width: 500px;
+        height: 200px;
     }
 
 }
