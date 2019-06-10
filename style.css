@@ -140,6 +140,7 @@ nav ul li a:hover {
 .content-container {
     width: 40%;
     padding-bottom: 30px;
+    position: relative;
 }
 
 .homepage-images {
@@ -162,6 +163,10 @@ nav ul li a:hover {
 p {
     color: white;
     text-align: center;
+}
+
+.toggle-text {
+    display: none;
 }
 
 .social-media-container {
@@ -289,6 +294,19 @@ p {
 
     .show-drawer {
         width: 100%;
+    }
+
+    .toggle-text {
+        display: initial !important;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        color: #ffffff;
+        background-color: yellowgreen;
+        height: 40px !important;
+        width: 80px;
+        border: 3px;
+        outline: none;
     }
 }
 
