@@ -227,10 +227,14 @@ p {
     }
 
     .content-container {
-        border: 1px red solid;
+        /* border: 1px red solid; */
         overflow: hidden;
         padding: 20px 10px;
-        /* height: 200px; */
+        height: 200px;
+    }
+
+    .content-p {
+        height: 50px;
     }
 
     .toggle-text {
