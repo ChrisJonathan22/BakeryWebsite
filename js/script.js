@@ -1,8 +1,11 @@
 const menuIcon = document.querySelector('.menu-icon');
 const menuDrawer = document.querySelector('.menu-drawer');
-const toggleTextBtn = document.querySelectorAll('.toggle-text');
-const contentText = document.querySelectorAll('.content-p');
-const contentTextCopy = contentText;
+const contentContainer = document.getElementsByClassName('')
+const accordion = [...document.getElementsByClassName("accordion")];
+let i;
+// const toggleTextBtn = document.querySelectorAll('.toggle-text');
+// const contentText = document.querySelectorAll('.content-p');
+// const contentTextCopy = contentText;
 
 function toggleDrawer() {  
     menuDrawer.classList.toggle('show-drawer');
@@ -15,21 +18,15 @@ function toggleText(e) {
     parentElement.classList.toggle('show-more');
 }
 
-toggleTextBtn.forEach(element => element.addEventListener('click', toggleText, false));
-
-
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
+function toggleAccordion() {
+  this.classList.toggle('active');
+  this.parentElement.classList.toggle('toggle-container');
+  const panel = this.nextElementSibling;
+  const panelChild = this.nextSibling;
+  panel.classList.toggle('toggle-accordion');
+  panelChild.nextSibling.children[0].classList.toggle('toggle-text');
 }
+
+accordion.forEach(acc => {
+  acc.addEventListener('click', toggleAccordion, false);
+});
