@@ -3,9 +3,6 @@ const menuDrawer = document.querySelector('.menu-drawer');
 const contentContainer = document.getElementsByClassName('')
 const accordion = [...document.getElementsByClassName("accordion")];
 let i;
-// const toggleTextBtn = document.querySelectorAll('.toggle-text');
-// const contentText = document.querySelectorAll('.content-p');
-// const contentTextCopy = contentText;
 
 function toggleDrawer() {  
     menuDrawer.classList.toggle('show-drawer');
