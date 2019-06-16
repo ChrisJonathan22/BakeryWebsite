@@ -5,14 +5,14 @@ const accordion = [...document.getElementsByClassName("accordion")];
 let i;
 
 function toggleDrawer() {  
-    menuDrawer.classList.toggle('show-drawer');
+  menuDrawer.classList.toggle('show-drawer');
 }
 
 menuIcon.addEventListener('click', toggleDrawer, false);
 
 function toggleText(e) {
-    const parentElement = e.target.parentNode;
-    parentElement.classList.toggle('show-more');
+  const parentElement = e.target.parentNode;
+  parentElement.classList.toggle('show-more');
 }
 
 function toggleAccordion() {

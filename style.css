@@ -293,6 +293,19 @@ p {
     }
 }
 
+/* Mobile Landscape */
+@media screen and (max-width: 1024px) and (orientation: Landscape) {
+
+    .image-container,
+    .content-container {
+        width: 80%;
+    }
+
+    .image-container {
+        max-width: 900px;
+    }
+}
+
 /* Mobile + Tablet menu */
 @media screen and (max-width: 1023px) {
 
