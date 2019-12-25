@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-image: url(img/background.jpg);
+    background-image: url('../img/background.jpg');
     overflow-x: hidden !important;
     font-family: 'Alegreya Sans', sans-serif;
 }
@@ -100,6 +100,7 @@ nav ul li a:hover {
 
 #homepage-2 {
     height: 400px;
+    text-align: center;
 }
 
 #homepage {
@@ -109,6 +110,8 @@ nav ul li a:hover {
 
 #our-story {
     text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 #homepage-title {
@@ -246,7 +249,6 @@ p {
     #homepage-2 {
         background-color: #ffffff !important;
         height: 300px !important;
-        width: 400px !important;
         overflow: hidden;
     }
 
@@ -342,6 +344,7 @@ p {
         top: 0px;
         background-color: white;
         overflow: hidden;
+        z-index: 1;
     }
 
     .menu-drawer ul {

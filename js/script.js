@@ -2,7 +2,6 @@ const menuIcon = document.querySelector('.menu-icon');
 const menuDrawer = document.querySelector('.menu-drawer');
 const contentContainer = document.getElementsByClassName('')
 const accordion = [...document.getElementsByClassName("accordion")];
-let i;
 
 function toggleDrawer() {  
   menuDrawer.classList.toggle('show-drawer');
@@ -11,7 +10,8 @@ function toggleDrawer() {
 menuIcon.addEventListener('click', toggleDrawer, false);
 
 function toggleText(e) {
-  const parentElement = e.target.parentNode;
+  const target = e.target;
+  const parentElement = target.parentNode;
   parentElement.classList.toggle('show-more');
 }
 
