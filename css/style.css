@@ -91,6 +91,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    transition: .5s color;
 }
 
 nav ul li a:hover {
@@ -228,7 +229,7 @@ p {
 
 .social-icons li a {
     color: yellowgreen;
-    transition: border 1s;
+    transition: .5s color;
 }
 
 .social-icons li a i {
@@ -237,7 +238,6 @@ p {
 
 .social-icons li a:hover {
     color: white;
-    border-bottom: 1px yellowgreen solid;
 }
 
 .footer-content {
@@ -249,7 +249,7 @@ p {
 }
 
 /* Mobile */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
 
     #homepage {
         display: none;
@@ -375,7 +375,7 @@ p {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 720px) and (max-width: 1024px) {
 
     .image-container {
         width: 70% !important;
